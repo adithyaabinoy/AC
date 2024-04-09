@@ -236,6 +236,8 @@ footer ul li a:hover {
 .carousel-section {
   color: white;
   display: flex;
+  /* height: 70vh; */
+
 }
 
 /* Left and right divs styles */
