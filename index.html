@@ -18,8 +18,8 @@
       <nav class="desktop-main-menu">
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#aboutus">About Us</a></li>
           <li><a href="#buyandsell">Buy and Sell</a></li>
+          <li><a href="#aboutus">About Us</a></li>
           <li><a href="contact.html">Contact Us</a></li>
           <li><a href="home.html">Featured Cars</a></li>
           <li><a href="#">Shop</a></li>
@@ -39,35 +39,26 @@
       </div>
     </section>
 
-    <!-- <div class="carousel-section">
+    <div class="carousel-section" id="buyandsell">
       <div class="left">
-        <h3>BUY AND SELL YOUR CAR</h3>
+        <p class="left-text"><b>BUY AND SELL YOUR CAR</b></p>
         <div class="btn animate">
           <div class="hover"></div>
-          <span>GET IN TOUCH WITH US</span>
+          <span>GET IN TOUCH WITH US</span>         
         </div>
-      </div>
-      </div>
-      <div class="right">
-        <div class="carousel-container">
-          <div class="carousel">
-            <div class="slide" id="slide1"></div>
-            <div class="slide" id="slide2"></div>
-            <div class="slide" id="slide3"></div>
-            <div class="slide" id="slide4"></div>
-          </div>
-          <button class="prev" onclick="prevSlide()">&#10094;</button>
-          <button class="next" onclick="nextSlide()">&#10095;</button>
-        </div>
-      </div>
-    </div> -->
-
-    <div class="carousel-section">
-      <div class="left">
-        <h3>BUY AND SELL YOUR CAR</h3>
-        <div class="btn animate">
-          <div class="hover"></div>
-          <span>GET IN TOUCH WITH US</span>
+        <div class="icons">
+          <a href="https://www.facebook.com/p/autocarnation-100064327560513/" class="image-link">
+            <img class="icon" src="./image/icons8-facebook-50.png" alt="fb">
+          </a>
+          <a href="https://www.instagram.com/autocarnation?igsh=MTc0bmpiNmg1aHJzeg%3D%3D&utm_source=qr" class="image-link">
+            <img class="icon" src="./image/icons8-instagram-50.png" alt="insta">
+          </a>
+          <a href="#" class="image-link">
+            <img class="icon" src="./image/icons8-twitterx-50.png" alt="twitter">
+          </a>
+          <a href="https://www.facebook.com/p/autocarnation-100064327560513/" class="image-link">
+            <img class="icon" src="./image/icons8-whatsapp-50.png" alt="whatsapp">
+          </a>
         </div>
       </div>
       <div class="right">
@@ -83,16 +74,15 @@
         </div>
       </div>
     </div>
-    
-
-    <div class="aboutUs" >
+<hr>
+    <div class="aboutUs" id="aboutus">
       <div class="upperDiv">
         <h2 class="aboutText">ABOUT US</h2>
         <div class="underline"></div>
       </div>
       <div class="bottomDiv">
         <div class="card1">
-          <img class="pic1" src="./image/icons8-handshake-heart-48.png" />
+          <img class="pic1" src="./image/icons8-mission-50.png" />
           <p class="title">Our Mission</p>
           <p class="description">
             At AUTOCARNATION, our mission is to provide our customers with the
@@ -102,7 +92,7 @@
           </p>
         </div>
         <div class="card1">
-          <img class="pic1" src="./image/icons8-handshake-heart-48.png" />
+          <img class="pic1" src="./image/icons8-services-50.png" />
           <p class="title">Our Services</p>
           <p class="description">
             We believe in giving back to our community. We sponsor local events
@@ -115,13 +105,14 @@
           <img class="pic1" src="./image/icons8-handshake-heart-48.png" />
           <p class="title">Our Community</p>
           <p class="description">
-            We believe in giving back to our community. We sponsor local events and charities, and we are always looking for ways to support our neighbors. We are proud to be a part of this community, and we want to do our part to make it a better place..
+            We believe in giving back to our community. We sponsor local events
+            and charities, and we are always looking for ways to support our
+            neighbors. We are proud to be a part of this community, and we want
+            to do our part to make it a better place..
           </p>
         </div>
       </div>
     </div>
-
-   
 
     <footer>
       <ul>
@@ -139,7 +130,7 @@
     </footer>
     <script>
       let slideIndex = 1;
-      
+
       function showSlide(n) {
         let slides = document.getElementsByClassName("slide");
         if (n > slides.length) {
@@ -153,15 +144,16 @@
         }
         slides[slideIndex - 1].style.display = "block";
       }
-      
+
       function nextSlide() {
-        showSlide(slideIndex += 1);
+        showSlide((slideIndex += 1));
       }
+
       function prevSlide() {
-      showSlide(slideIndex -= 1);
-    }
-    
-    showSlide(slideIndex);
-  </script>
+        showSlide((slideIndex -= 1));
+      }
+
+      showSlide(slideIndex);
+    </script>
   </body>
 </html>
