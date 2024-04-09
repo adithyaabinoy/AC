@@ -328,3 +328,78 @@ footer ul li a:hover {
   height: 30px;
   padding-left: 10px;
 }
+
+/* contact us */
+.contactUs {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 40px;
+}
+
+
+.contact-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+  }
+  .contact-form {
+    width: 35%;
+  }
+  .contact-form form {
+    border: 1px solid #fff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: black; 
+    border-color: white;
+  }
+  .contact-form input[type="text"]::placeholder,
+  .contact-form input[type="email"]::placeholder,
+  .contact-form textarea::placeholder {
+    background-color: black; 
+  }
+  .contact-form input[type="submit"] {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .contact-info {
+    width: 45%;
+    background-image: url("../image/luxurious-precision-an-aesthetic-4k-view-of-a-sleek-car-4ncptuzz1zsch2bi.jpg");
+    padding: 50px;
+  }
+  .contact-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .contact-info p {
+    margin-bottom: 20px;
+  }
+  .contact-info .icon {
+    float: left;
+    margin-right: 10px;
+  }
+
+  .contactInfo-img {
+    padding-bottom: 10px;
+  }
+
+  .contact-heading {
+    font-size: 30px;
+  }
+
+  .contactText {
+    font-size: 15px;
+  }
