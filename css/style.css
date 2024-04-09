@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Familjen+Grotesk:wght@400;600;700&family=Lato&family=Playfair+Display:ital,wght@1,500&family=Roboto:wght@300&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Familjen Grotesk", sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+/*header/navbar */
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  height: 100px;
+  padding: 0 30px;
+}
+
+/* logo */
+.logo {
+  width: 210px;
+  height: auto;
+}
+
+.logo img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* desktop menu */
+.desktop-main-menu {
+  margin-right: 50px;
+}
+
+.desktop-main-menu ul {
+  display: flex;
+}
+
+.desktop-main-menu ul li {
+  position: relative;
+  margin-right: 70px;
+  /* margin-right: 20px; */
+  padding-bottom: 2px;
+}
+
+/* menu item bottom part */
+.desktop-main-menu ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  transform: scaleX(0);
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  /* transform-origin:right center ; */
+}
+
+.desktop-main-menu ul li a:hover::after {
+  transform: scaleX(1);
+  /* transform-origin:left center ; */
+  transition-duration: 0.4s;
+}
+
+/* section */
+section {
+  position: relative;
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+}
+
+.section-inner {
+  position: absolute;
+  bottom: 200px;
+  left: 150px;
+  max-width: 560px;
+}
+.section-inner h4 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+.section-inner h2 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+/* BACKGROUND IMAGES*/
+.section-a {
+  background-image: url("../image/88965-rolls-royce-wraith-rolls-royce-cars-4k-hd-behance-dark.jpg");
+}
+
+.section-c {
+  background-image: url("../image/ACN\ car3.jpg");
+}
+
+.aboutUs {
+  background-image: url("");
+  background-size: cover;
+}
+.btn {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  min-width: 130px;
+  padding: 15px 50px;
+  margin-top: 30px;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  overflow: hidden;
+  z-index: 2;
+  border-radius: 20px;
+}
+
+.btn:hover span {
+  color: #000;
+}
+
+.btn .hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  color: #000;
+  z-index: -1;
+  transform: translateY(100%);
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn:hover .hover {
+  transform: translateX(0);
+}
+
+/* section about us */
+.aboutText {
+  padding-top: 120px;
+  padding-left: 43%;
+  font-size: 40px;
+  /* text-decoration: underline; */
+}
+
+.underline {
+    width: 230px;
+    height: 5px;
+    background-color: #fff;
+    margin: 10px auto 30px; /* Space between text and underline */
+  }
+.bottomDiv {
+  padding-top: 150px;
+  display: flex;
+  padding-bottom: 30px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card1 {
+  width: 250px;
+  margin-left: 30px;
+}
+
+.pic1 {
+  margin-left: 90px;
+  height: 55px;
+  width: 55px;
+}
+
+.title {
+  margin: 0px 0 0 68px;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.description {
+  font-size: 13px;
+  text-align: justify;
+}
+/* footer */
+footer {
+  position: relative;
+  padding: 55px 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer ul li {
+  margin-right: 30px;
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 2.5;
+}
+footer ul li a {
+  color: #fff;
+  transition: color 0.6s;
+}
+
+footer ul li a:hover {
+  color: #aaa;
+}
+
+/* section about us */
+
+/* .section-b {
+    display: flex;
+  }
+
+.card {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.image1 {
+    height: 300px;
+    width: 300px;
+}
+
+.description {
+    width: 250px;
+}
+
+.heading {
+    font-size: 20px;
+    margin: 10px 0 10px 70px;
+} */
+
+/* buy and sell section */
+
+.carousel-section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+/* Carousel styles */
+
+/* .carousel-container {
+    width: 30%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  } */
+  
+  /* .carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+  } */
+  
+  /* .slide {
+    flex: 0 0 100%;
+    height: 300px; 
+    display: none;
+  }
+  
+  .slide:first-child {
+    display: block;
+  }
+  
+  .slide {
+    background-size: cover;
+  } */
+  
+  /* #slide1 {
+    background-image: url('../image/aesthetic-car-.jpg'); 
+  }
+  
+  #slide2 {
+    background-image: url('../image/ACN\ car3.jpg'); 
+  }
+  #slide3 {
+    background-image: url('../image/ACN\ car2.jpg'); 
+  }
+  #slide4 {
+    background-image: url("../image/ACN\ car1.jpg");
+  }
+
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+  } */
+  /* .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  } */
+  /* Carousel styles */
+
+.carousel-container {
+    width: 30%;
+    height: 300px; /* Adjust the height as needed */
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+  
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+  
+.slide {
+    flex: 0 0 100%;
+    height: 100%; /* Make sure slides take up full height of container */
+    background-size: cover;
+}
+
+.slide:first-child {
+    display: block;
+}
+  
+#slide1 {
+    background-image: url('../image/aesthetic-car-.jpg');
+}
+  
+#slide2 {
+    background-image: url('../image/ACN car3.jpg');
+}
+  
+#slide3 {
+    background-image: url('../image/ACN car2.jpg');
+}
+  
+#slide4 {
+    background-image: url("../image/ACN car1.jpg");
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+  
+.next {
+    right: 0;
+}

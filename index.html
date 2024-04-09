@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script" defer></script>
+    <title>AutoCarnation</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="logo">
+        <a href="index.html">
+          <!-- <img src="image/logo.png" alt="AutoCarnation" /> -->
+          <p>autocarnation</p>
+        </a>
+      </div>
+      <nav class="desktop-main-menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#aboutus">About Us</a></li>
+          <li><a href="#buyandsell">Buy and Sell</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="home.html">Featured Cars</a></li>
+          <li><a href="#">Shop</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!---section A-->
+    <section id="home" class="section-a">
+      <div class="section-inner">
+        <h2>Drive in style with autocarnation</h2>
+        <h4>Discover our luxury Collection</h4>
+        <div class="btn animate">
+          <div class="hover"></div>
+          <span>JOIN US</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="carousel-section">
+      <div class="left">
+        <h3>BUY AND SELL YOUR CAR</h3>
+        <div class="btn animate">
+          <div class="hover"></div>
+          <span>GET IN TOUCH WITH US</span>
+        </div>
+      </div>
+      </div>
+      <div class="right">
+        <div class="carousel-container">
+          <div class="carousel">
+            <div class="slide" id="slide1"></div>
+            <div class="slide" id="slide2"></div>
+            <div class="slide" id="slide3"></div>
+            <div class="slide" id="slide4"></div>
+          </div>
+          <button class="prev" onclick="prevSlide()">&#10094;</button>
+          <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="carousel-section">
+      <div class="left">
+        <h3>BUY AND SELL YOUR CAR</h3>
+        <div class="btn animate">
+          <div class="hover"></div>
+          <span>GET IN TOUCH WITH US</span>
+        </div>
+      </div>
+      <div class="right">
+        <div class="carousel-container">
+          <div class="carousel">
+            <div class="slide" id="slide1"></div>
+            <div class="slide" id="slide2"></div>
+            <div class="slide" id="slide3"></div>
+            <div class="slide" id="slide4"></div>
+          </div>
+          <button class="prev" onclick="prevSlide()">&#10094;</button>
+          <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="aboutUs" >
+      <div class="upperDiv">
+        <h2 class="aboutText">ABOUT US</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="bottomDiv">
+        <div class="card1">
+          <img class="pic1" src="./image/icons8-handshake-heart-48.png" />
+          <p class="title">Our Mission</p>
+          <p class="description">
+            At AUTOCARNATION, our mission is to provide our customers with the
+            best car buying experience possible. We believe in honesty,
+            integrity, and transparency in all of our dealings. Our goal is to
+            make the car buying process easy and stress-free for our customers.
+          </p>
+        </div>
+        <div class="card1">
+          <img class="pic1" src="./image/icons8-handshake-heart-48.png" />
+          <p class="title">Our Services</p>
+          <p class="description">
+            We believe in giving back to our community. We sponsor local events
+            and charities, and we are always looking for ways to support our
+            neighbors. We are proud to be a part of this community, and we want
+            to do our part to make it a better place.
+          </p>
+        </div>
+        <div class="card1">
+          <img class="pic1" src="./image/icons8-handshake-heart-48.png" />
+          <p class="title">Our Community</p>
+          <p class="description">
+            We believe in giving back to our community. We sponsor local events and charities, and we are always looking for ways to support our neighbors. We are proud to be a part of this community, and we want to do our part to make it a better place..
+          </p>
+        </div>
+      </div>
+    </div>
+
+   
+
+    <footer>
+      <ul>
+        <li>AUTOCARNATION &copy; 2024</li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Youtube</a></li>
+        <li>
+          <a
+            href="https://www.instagram.com/autocarnation/reels/?next=%2Fchelway%2Ffeed%2F"
+            >Instagram</a
+          >
+        </li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </footer>
+    <script>
+      let slideIndex = 1;
+      
+      function showSlide(n) {
+        let slides = document.getElementsByClassName("slide");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+      }
+      
+      function nextSlide() {
+        showSlide(slideIndex += 1);
+      }
+      function prevSlide() {
+      showSlide(slideIndex -= 1);
+    }
+    
+    showSlide(slideIndex);
+  </script>
+  </body>
+</html>
