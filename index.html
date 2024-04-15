@@ -107,7 +107,47 @@
       </div>
     </div>         
     </div>
-    <hr />
+    <div class="review-section">
+      <button class="review-arrow review-arrow-left" onclick="reviewscrollCarousel(-1)">&#10094;</button>
+      <div class="review-carousel-container">
+        <div class="review-card">
+          <div class="review-name">John Doe</div>
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="review-description">
+            <p>
+              This is a fantastic product! It exceeded my expectations in every
+              way. The build quality is excellent, and it performs flawlessly. I
+              highly recommend it to anyone in need of such a product.
+            </p>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-name">John Doe</div>
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="review-description">
+            <p>
+              This is a fantastic product! It exceeded my expectations in every
+              way. The build quality is excellent, and it performs flawlessly. I
+              highly recommend it to anyone in need of such a product.
+            </p>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-name">John Doe</div>
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="review-description">
+            <p>
+              This is a fantastic product! It exceeded my expectations in every
+              way. The build quality is excellent, and it performs flawlessly. I
+              highly recommend it to anyone in need of such a product.
+            </p>
+          </div>
+        </div>
+       
+        <!-- Add more review cards here -->
+      </div>
+      <button class="review-arrow review-arrow-right" onclick="reviewscrollCarousel(1)">&#10095;</button>
+    </div>
     <div class="aboutUs" id="aboutus">
       <div class="upperDiv">
         <h2 class="aboutText">ABOUT US</h2>
@@ -267,31 +307,17 @@
 
       showSlide(slideIndex);
 
-      const carouselContainer = document.querySelector(
-        ".re-carousel-container"
-      );
-      const prevBtn = document.querySelector(".re-prev");
-      const nextBtn = document.querySelector(".re-next");
-      let slideIndexx = 0;
+     
 
-      prevBtn.addEventListener("click", () => {
-        slideIndexx = Math.max(slideIndexx - 1, 0);
-        updateCarousel();
-      });
+      let reviewcurrentIndex = 0;
+  const reviewcardWidth = 100; // Adjust this according to card width + margin
 
-      nextBtn.addEventListener("click", () => {
-        slideIndexx = Math.min(
-          slideIndexx + 1,
-          Math.floor(carouselContainer.children.length / 4)
-        );
-        updateCarousel();
-      });
-
-      function updateCarousel() {
-        carouselContainer.style.transform = `translateX(-${
-          slideIndexx * 100
-        }%)`;
-      }
+  function reviewscrollCarousel(direction) {
+    const reviewcarousel = document.querySelector('.review-carousel-container');
+    reviewcurrentIndex = reviewcurrentIndex + direction;
+    const offset = -reviewcurrentIndex * reviewcardWidth;
+    reviewcarousel.style.transform = `translateX(${offset}px)`;
+  }
     </script>
   </body>
 </html>
