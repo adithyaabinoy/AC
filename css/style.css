@@ -174,7 +174,7 @@ section {
   width: 230px;
   height: 5px;
   background-color: #fff;
-  margin: 10px auto 30px; 
+  margin: 10px auto 30px;
 }
 .bottomDiv {
   padding-top: 35px;
@@ -210,32 +210,32 @@ section {
 }
 
 .ac-card-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #fff;
-  }
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+}
 
-  .ac-about {
-    text-align: center;
-  }
-  .ac-card {
-    width: calc(33.33% - 20px);
-    padding: 20px;
-    border-radius: 5px;
-    box-sizing: border-box;
-    color: #000;
-  }
-  .ac-card h2 {
-    margin-top: 0;
-    font-size: 20px;
-    color: #333;
-  }
-  .ac-card p {
-    margin-bottom: 0;
-    font-size: 16px;
-    color: #666;
-  }
+.ac-about {
+  text-align: center;
+}
+.ac-card {
+  width: calc(33.33% - 20px);
+  padding: 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #000;
+}
+.ac-card h2 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #333;
+}
+.ac-card p {
+  margin-bottom: 0;
+  font-size: 16px;
+  color: #666;
+}
 /* footer */
 footer {
   position: relative;
@@ -269,7 +269,6 @@ footer ul li a:hover {
   color: white;
   display: flex;
   /* height: 70vh; */
-
 }
 
 /* Left and right divs styles */
@@ -344,7 +343,6 @@ footer ul li a:hover {
 }
 
 .prev {
-
   left: 0;
 }
 
@@ -363,60 +361,6 @@ footer ul li a:hover {
 }
 
 /* review section */
-/* .review-section {
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30vh;
-  background-color: #000;
-  overflow: hidden;
-}
-.review-carousel-container {
-  display: flex;
-  flex-wrap: nowrap;
-  transition: transform 0.5s ease;
-}
-.review-card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: 300px;
-  text-align: center;
-  margin: 10px;
-  color: #000;
-}
-.review-name {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-.review-stars {
-  color: #ffd700;
-  margin-bottom: 10px;
-}
-.review-description {
-  text-align: left;
-  padding: 0 10px;
-}
-.review-arrow {
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: yellow;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 1;
-}
-.review-arrow-left {
-  left: 0;
-}
-.review-arrow-right {
-  right: 0;
-} */
-
-/* review section */
 .review-section {
   font-family: Arial, sans-serif;
   display: flex;
@@ -425,17 +369,17 @@ footer ul li a:hover {
   height: 30vh;
   background-color: #000;
   overflow: hidden;
-  position: relative; /* Add position relative */
+  position: relative;
 }
 
 .review-carousel-container {
   display: flex;
   flex-wrap: nowrap;
   transition: transform 0.5s ease;
-  position: relative; /* Change to relative */
-  top: 0; /* Reset top */
-  left: 0; /* Reset left */
-  transform: translateX(0); /* Reset transform */
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translateX(0);
 }
 
 .review-card {
@@ -455,9 +399,9 @@ footer ul li a:hover {
   padding: 10px;
   cursor: pointer;
   z-index: 1;
-  position: absolute; /* Add position absolute */
-  top: 50%; /* Add top 50% */
-  transform: translateY(-50%); /* Center vertically */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .review-arrow-left {
@@ -468,81 +412,76 @@ footer ul li a:hover {
   right: 0;
 }
 
-    
-  
-    
-
 /* contact us */
 .contactUs {
-    text-align: center;
-    padding-top: 40px;
-    font-size: 40px;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 40px;
 }
 
-
 .contact-container {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 20px;
-  }
-  .contact-form {
-    width: 35%;
-  }
-  .contact-form form {
-    border: 1px solid #fff;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  .contact-form input[type="text"],
-  .contact-form input[type="email"],
-  .contact-form textarea {
-    width: calc(100% - 22px); 
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    box-sizing: border-box;
-    background-color: black; 
-    border-color: white;
-  }
-  .contact-form input[type="text"]::placeholder,
-  .contact-form input[type="email"]::placeholder,
-  .contact-form textarea::placeholder {
-    background-color: black; 
-  }
-  .contact-form input[type="submit"] {
-    background-color: #fff;
-    color: #000;
-    padding: 10px 20px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .contact-info {
-    width: 45%;
-    background-image: url("../image/luxurious-precision-an-aesthetic-4k-view-of-a-sleek-car-4ncptuzz1zsch2bi.jpg");
-    padding: 50px;
-  }
-  .contact-info h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  .contact-info p {
-    margin-bottom: 20px;
-  }
-  .contact-info .icon {
-    float: left;
-    margin-right: 10px;
-  }
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.contact-form {
+  width: 35%;
+}
+.contact-form form {
+  border: 1px solid #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: black;
+  border-color: white;
+}
+.contact-form input[type="text"]::placeholder,
+.contact-form input[type="email"]::placeholder,
+.contact-form textarea::placeholder {
+  background-color: black;
+}
+.contact-form input[type="submit"] {
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-info {
+  width: 45%;
+  background-image: url("../image/luxurious-precision-an-aesthetic-4k-view-of-a-sleek-car-4ncptuzz1zsch2bi.jpg");
+  padding: 50px;
+}
+.contact-info h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.contact-info p {
+  margin-bottom: 20px;
+}
+.contact-info .icon {
+  float: left;
+  margin-right: 10px;
+}
 
-  .contactInfo-img {
-    padding-bottom: 10px;
-  }
+.contactInfo-img {
+  padding-bottom: 10px;
+}
 
-  .contact-heading {
-    font-size: 30px;
-  }
+.contact-heading {
+  font-size: 30px;
+}
 
-  .contactText {
-    font-size: 15px;
-  }
+.contactText {
+  font-size: 15px;
+}
