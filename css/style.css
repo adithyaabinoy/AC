@@ -61,7 +61,6 @@ ul {
 .desktop-main-menu ul li {
   position: relative;
   margin-right: 70px;
-  /* margin-right: 20px; */
   padding-bottom: 2px;
 }
 
@@ -76,12 +75,10 @@ ul {
   background: #fff;
   transform: scaleX(0);
   transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
-  /* transform-origin:right center ; */
 }
 
 .desktop-main-menu ul li a:hover::after {
   transform: scaleX(1);
-  /* transform-origin:left center ; */
   transition-duration: 0.4s;
 }
 
