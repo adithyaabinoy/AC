@@ -8,10 +8,10 @@
     <title>AutoCarnation</title>
   </head>
   <body>
-    <header class="main-header">
+    <!-- <header class="main-header">
       <div class="logo">
         <a href="index.html">
-          <!-- <img src="image/logo.png" alt="AutoCarnation" /> -->
+         
           <p>autocarnation</p>
         </a>
       </div>
@@ -25,7 +25,24 @@
           <li><a href="#">Shop</a></li>
         </ul>
       </nav>
-    </header>
+    </header> -->
+
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">autocarnation</a>
+      <div class="hamburger" id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="navbar-links" id="navbar-links">
+        <a href="#home" class="navbar-link">Home</a>
+        <a href="#buyandsell" class="navbar-link">Buy and Sell</a>
+        <a href="#aboutus" class="navbar-link">About Us</a>
+        <a href="#contactus" class="navbar-link">Contact Us</a>
+        <a href="home.html" class="navbar-link">Featured Cars</a>
+        <a href="#" class="navbar-link">Shop</a>
+      </div>
+    </nav>
 
     <!---section A-->
     <section id="home" class="section-a">
@@ -150,7 +167,7 @@
     </div>
     <div class="aboutUs" id="aboutus">
       <div class="upperDiv">
-        <h2 class="aboutText">ABOUT US</h2>
+        <p class="aboutText">ABOUT US</p>
         <div class="underline"></div>
       </div>
       <div class="bottomDiv">
@@ -318,6 +335,13 @@
     const offset = -reviewcurrentIndex * reviewcardWidth;
     reviewcarousel.style.transform = `translateX(${offset}px)`;
   }
+
+  const navbarLinks = document.getElementById('navbar-links');
+      const hamburger = document.getElementById('hamburger');
+
+      hamburger.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active');
+      });
     </script>
   </body>
 </html>
